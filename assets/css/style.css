@@ -4,7 +4,7 @@
   --nav-text: rgb(146,204,205);
   --border-color-nav: rgb(146,204,205);
   --color-text-title: rgb(49, 52, 61);
-  --background-main: rgb(237,237,219);
+  --background-main: rgb(255, 255, 255);
   --border-color-titles: rgb(68,88,119)
 
 }
@@ -212,6 +212,14 @@ header.title-contact{
   .title-contact a{
     position: relative;
     left: -50%;
+  }
+
+}
+@media screen and (max-width: 1382px) {
+
+  .card{
+    margin: 1.7%;
+    width: 44.7%;
   }
 }
 
