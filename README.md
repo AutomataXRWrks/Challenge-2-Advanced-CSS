@@ -1,36 +1,40 @@
 # Challenge-2-Advanced-CSS
-# 📖 Code Refactor for Challenge 1
+# 📖 Web application from scratch for Challenge 2
 
-The web page for challenge 1 is given as the next images.
+The web page for challenge 2 is given as the next images.
 
 # For desktop users
 
-![A webpage well design for desktop users with a nav bar, a page name and title. semantic lay ](./assets/images/image-1.png)
+![A webpage well design for desktop users with a nav bar, a page name and title. semantic lay ](./assets/images/web-portafolio-1.PNG)
 
-![A webpage well design for desktop users with a nav bar, a page name and title. semantic lay](./assets/images/image-2.png)
-
-# For mobile users
+![A webpage well design for desktop users with a nav bar, a page name and title. semantic lay](./assets/images/web-portafolio-2.PNG)
 
 
-![A webpage well design for mobile users with a nav bar, a page name and title. semantic lay.](./assets/images/image-3.png)
-
-![A webpage well design for mobile users with a nav bar, a page name and title. semantic lay](./assets/images/image-4.png)
+![A webpage well design for desktop users with a nav bar, a page name and title. semantic lay](./assets/images/web-portafolio-3.PNG)
 
 
-In this project is contained the web development refactoring code for challenge 1 of module 1. Requested aspects for the challenge where made on the code such as:
+In this project is contained the web application from scratch for challenge 2 of module 2. Requested aspects for the challenge where made on the code such as:
 
-* Selection of a well concise and descriptive title
+* resize the page or view the site on various screens and devices THEN I am presented with a responsive layout that adapts to my viewport
 
-* Descriptive text on alt attributes
+* click on the images of the applications THEN I am taken to that deployed application
 
-* Css with semantic structure
+* present with the developer's first application THEN that application's image should be larger in size than the others
 
-* Css properly commented
+* click on the link to the section about their work THEN the UI scrolls to a section with titled images of the developer's applications
+
+*  click one of the links in the navigation THEN the UI scrolls to the corresponding section
+
+* present a developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
+
+
+* Prototyping reset.css
+
 
 # 🏆 The base code is deployed a this link 
 
-https://automataxrwrks.github.io/md1ch1/
+https://github.com/AutomataXRWrks/Challenge-2-Advanced-CSS
 
-## Go to Website: [md1ch1](https://automataxrwrks.github.io/md1ch1/)
+## Go to Website: [Challenge-2-Advanced-CSS](https://automataxrwrks.github.io/Challenge-2-Advanced-CSS/)
 
 
