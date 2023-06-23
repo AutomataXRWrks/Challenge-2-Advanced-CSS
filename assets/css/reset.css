@@ -1,7 +1,5 @@
 :root{
-
-
-
+    --hover-img: rgb(146,204,205,0.2);
 }
 
 
@@ -10,21 +8,21 @@ header{
     justify-content: space-between;
     background-color:rgb(49, 52, 61);
     font-family: Arial, Helvetica, sans-serif;
-    height: 100px;
+    height: 160px;
 }
 
 h1{
-
-    padding: 25px;
-    margin: 5px;
-    background-color:rgb(146, 204, 205);
-    font-size: 40px;
+    font-size: 55px;
+    width: 38%;
+    padding-top: 1rem;
+    text-align: right;
+    padding-right: 2rem;
+    font-family:Arial, Helvetica, sans-serif
 
 }
 
 nav a {
-  background-color: unset;
-  color: var(--navlink-color);
+
   font-weight: bold;
   text-decoration: none;
   
@@ -32,18 +30,15 @@ nav a {
 
 
 ul{
-    background-color: aquamarine;
     display: flex;
     justify-content: space-between;
-
-
 }
 
 li{
+    padding-top: 2rem;
     list-style-type: none;
     font-size: 30px;
     margin:1rem;
-    border-bottom: 5px solid red;
 
 }
 
@@ -56,20 +51,16 @@ li{
 
 .subtitle{
     background-color: blanchedalmond;  
-    width: 28%;
-    position: absolute;
-    left: 68%;
-    top:18%;
-    justify-content: center;
+    width: 23%;
+    height: 38%;
+    position: relative;
+    left: 65%;
+    top:42%;
+    padding-top: 1rem;
+    padding-left: 5rem;
     font-size: 55px;
-
-
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-.card br{
-    font-size: 5px;
-}
-
 
 
 
@@ -79,7 +70,6 @@ main{
 
 section.about{
 display: flex;
-background-color: red;
 }
 
 header.title-about{
@@ -88,32 +78,36 @@ header.title-about{
     margin: 70px;
     padding: 50px;
     width: 10%;
-    height: 300px;
-    background-color: aqua;
-    border-right: 10px solid white;
+    height: 400px;
 }
 
+.image-developer{
+    padding-top: 7rem;
+    max-width: 100%;
+    height: 10%;
+
+}
+
+
 p.text-about{
-    font-size: 50px;
+    font-size: 30px;
     width: 70%;
     padding: 50px;
-    background-color: aquamarine;
 }
 
 section.work{
     display: flex;
-    background-color: yellowgreen;
+
 }
 
 header.title-work{
     text-align:right;
     font-size: 50px;
     margin: 70px;
-    padding: 50px;
+    padding: 40px;
     width: 10%;
-    height: 300px;
-    background-color: aqua;
-    border-right: 10px solid white;
+    height:840px;
+
 }
 
 .grid{
@@ -121,57 +115,122 @@ header.title-work{
     flex-wrap: wrap;
     width: 70%;
     height: 100%;
-
 }
 
 
 .card{
     margin:0.5%;
-    padding: 10px;
-    width: 47.3%;
+
+    width: 47.7%;
     height: 200px;
     text-align: center;
     border-style: solid;
     border-width: 1px;
-    background-color: blueviolet;
     
 }
 
 .card .portafolio{
     position: relative;
     top: 85px;
-    font-size: 35px;
+    font-size: 28px;
     justify-content: center;
-    background-color: aliceblue;
-    width: 200px;
+    height: 50%;
+    width: 30%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
 
 .card .main-portafolio{
     position: relative;
-    top: 400px;
-    font-size: 35px;
+    top: 380px;
+    font-size: 28px;
     justify-content: center;
-    background-color: aliceblue;
-    width: 200px;
+    height: 20%;
+    width: 20%;
 
 }
 
 .card header a{
     position: relative;
     top: 20px;
-    height: 90%;
+    height: 50%;
     text-align: center;
     text-decoration: none;
 }
 
+#image-subtitle{
+
+    background-image: url("../images/image-subtitle.png");
+    background-size: cover;
+    background-position: center;
+}
 
 
 
 #music-web-app{
-    background-color: aqua;
+
     width: 100%;
     height: 500px;
+    background-image: url("../images/webapp.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#music-web-app.card:hover{
+    background-color: var(--hover-img);
+    opacity: 0.6;
+}
+
+
+#machine-learning{
+
+    background-image: url("../images/machine-learning.PNG");
+    background-size: cover;
+    background-position: center;
+}
+
+
+#machine-learning.card:hover{
+    background-color: var(--hover-img);
+    opacity: 0.6;
+}
+
+#metaverse{
+
+    background-image: url("../images/metaverse.PNG");
+    background-size: cover;
+    background-position: center;
+}
+
+
+#metaverse.card:hover{
+    background-color: var(--hover-img);
+    opacity: 0.6;
+}
+
+#mobile{
+
+    background-image: url("../images/mobile.PNG");
+    background-size: cover;
+    background-position: center;
+}
+
+#mobile.card:hover{
+    background-color: var(--hover-img);
+    opacity: 0.6;
+}
+
+#ecommerce{
+
+    background-image: url("../images/ecommerce.PNG");
+    background-size: cover;
+    background-position: center;
+}
+
+#ecommerce.card:hover{
+    background-color: var(--hover-img);
+    opacity: 0.6;
 }
 
 
@@ -182,7 +241,7 @@ header.title-work{
 
 .conctact{
     display: flex;
-    background-color: pink;
+
 
 }
 
@@ -193,8 +252,7 @@ header.title-contact{
     padding: 50px;
     width: 10%;
     height: 100px;
-    background-color: aqua;
-    border-right: 10px solid white;
+
 
 }
 
@@ -205,30 +263,6 @@ header.title-contact{
     padding: 70px;
     width: 100%;
     height: 100%;
-
-}
-
-li.text-contact{
-    padding: 55px;
-    margin: 55px;
-    background-color: blue;
 }
 
 
-/* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
-
-/* Tablets - header changes color */
-@media screen and (max-width: 992px) {
-
-  }
-  
-  /* Large smartphones - navbar changes color */
-  @media screen and (max-width: 768px) {
-
-  }
-  
-  /* Small smartphones - image placeholders change color */
-  @media screen and (max-width: 576px) {
-
-  }
-  

@@ -1,164 +1,133 @@
-/* create custom CSS variables (also called custom properties) and apply them to the root of the page, making them accessible to all other CSS */
-:root {
-    /* declare a variable with `--` syntax */
-    --dark: #13293d;
-    --light: #fff;
-    --navlink-color: #b9c6ae;
-  }
-  
+:root{
 
-* {
-    box-sizing: border-box;
-  }
+  --background-header: rgb(49, 52, 61);
+  --nav-text: rgb(146,204,205);
+  --border-color-nav: rgb(146,204,205);
+  --color-text-title: rgb(49, 52, 61);
+  --background-main: rgb(237,237,219);
+  --border-color-titles: rgb(68,88,119)
+
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+header{
+  background-color: var(--background-header);
+}
+
+h1{
+  background-color:rgb(146, 204, 205);
+  color: var(--color-text-title);
+}
+
+nav a {
+
+  text-decoration: none;
+  color: var(--nav-text);
+  border-bottom: 3px solid var(--border-color-nav);
   
-  body {
-    font-family: Arial;
-    margin: 0;
-  }
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1%;
-    /* use CSS var() function to reference a variable created above */
-    background-color: var(--dark);
-    color: var(--light);
-  }
-  
-  h1 {
-    font-size: 200%;
-  }
-  
-  h2 {
-    margin: 2% 0;
-    font-size: 250%;
-  }
-  
-  a[href*='.css']::after {
-    content: '📝';
-    display: inline-block;
-    margin-left: 3px;
-  }
-  
-  nav ul {
-    display: flex;
-    justify-content: space-between;
-    min-width: 300px;
-    list-style-type: none;
-  }
-  
-  nav a {
-    background-color: unset;
-    color: var(--navlink-color);
-    font-weight: bold;
-    text-decoration: none;
-  }
-  
-  nav a:hover {
-    color: var(--light);
-  }
-  
-  /* 
-  What is the flex-wrap property? 
-  TODO: Write your answer here 
-   flex items will wrap onto multiple lines, from top to bottom.
-  */
-  main {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  aside {
-    flex: 1;
-    background-color: #b9c6ae;
-    padding: 80px;
-    text-align: center;
-  }
-  
-  
-  
-  /* 
-  What does the justify-content property do? 
-  TODO: Write your answer here 
-  
-  This defines the alignment along the main axis.
-   It helps distribute extra free space leftover when
-    either all the flex items on a line are inflexible,
-     or are flexible but have reached their maximum size.
-      It also exerts some control over the alignment of items
-       when they overflow the line.
-  */
-  .products {
-    display: flex;
-    flex: 4;
-    flex-wrap: wrap;
-    background-color: #fff;
-    padding: 20px;
-    justify-content: center;
-  }
-  
-  /* 
-  What is the flex property a shorthand property for?
-  What is it doing here? 
-  TODO: Write your answer here 
-  
-  set three values: flex-grow | flex-shrink | flex-basis 
-  The flex-grow CSS property sets the flex grow factor,
-  which specifies how much of the flex container's remaining
-  space should be assigned to the flex item's main size
-  
-  The flex-shrink CSS property sets the flex shrink factor of
-  a flex item. If the size of all flex items is larger than 
-  the flex container, items shrink to fit according to flex-shrink
-  
-  The flex-basis CSS property sets the initial main size of a flex item.
-  It sets the size of the content box unless otherwise set with box-sizing.*/
-  
-  */
-  .card {
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 10px;
-    padding: 10px;
-    flex: 1 0 200px;
-  }
-  
-  .card header {
-    padding: 20px;
-  }
-  
-  .card p {
-    text-align: center;
-  }
-  
-  .card img {
-    width: 100%;
+}
+
+.subtitle{
+  background-color: var(--nav-text);
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+main{
+  background-color: var(--background-main);
+}
+
+
+header.title-about{
+  background-color: var(--background-main);
+  border-right: 6px solid var(--border-color-titles);
+  color: var(--border-color-titles);
+
+}
+
+p.text-about{
+  background-color: var(--background-main);
+  font-family: Helvetica;
+  color: var(--border-color-titles);
+}
+
+
+section.work{
+  display: flex;
+  background-color: var(--background-main);
+}
+
+header.title-work{
+  background-color: var(--background-main);
+  border-right: 6px solid var(--border-color-titles);
+  color: var(--border-color-titles);
+}
+
+
+.grid{
+  background-color: var(--background-main);
+}
+
+.card{
+  border-width: 8px;
+  border-color: var(--nav-text);
+}
+
+.card .main-portafolio{
+
+  border-color: var(--nav-text);
+}
+
+.card header{
+  background-color: var(--nav-text);
+
+}
+
+.card header a{
+  background-color: var(--nav-text);
+  color: var(--border-color-titles);
+}
+
+header.title-contact{
+  background-color: var(--background-main);
+  border-right: 6px solid var(--border-color-titles);
+  color: var(--border-color-titles);
+
+}
+
+.text-contact li{
+  border-bottom: 5px solid var(--border-color-titles);
+  color: var(--border-color-titles);
+}
+
+
+
+/* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
+
+/* Tablets - header changes color */
+@media screen and (max-width: 1792px) {
+  h1{
+    font-size: 45px;
+    padding-top: 2rem;
   }
 
 
-  .card.project {
-    /* With a flex-grow value of 2, this element grows twice as wide as others */
-    /* The second value, flex-shrink, defines how the element will shrink if it can't fit */
-    flex: 2 1 200px;
-    height: 700px;
-  }
-  
+}
 
+/* Large smartphones - navbar changes color */
+@media screen and (max-width: 1500px) {
 
-  
-  
-  /* 
-  What does the flex-direction property define?
-  What is it doing here? 
-  TODO: Write your answer here
-  
-  The flex-direction CSS property sets how flex items
-   are placed in the flex container defining the main axis and the direction (normal or reversed). 
-  */
-  @media screen and (max-width: 768px) {
-    main,
-    nav {
-      flex-direction: column;
-    }
+  .subtitle{
+    font-size: 40px;
+    padding-top: 2rem;
   }
-  
+
+}
+
+/* Small smartphones - image placeholders change color */
+@media screen and (max-width: 576px) {
+
+}

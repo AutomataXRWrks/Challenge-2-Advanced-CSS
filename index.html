@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Andres Cedillo Web Portafolio</title>
   <link rel="stylesheet" href="./assets/css/reset.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 <body>
   
@@ -12,56 +13,67 @@
     <h1>Andres Cedillo Chincoya</h1>
     <nav>
       <ul>
-        <li><a href="">About Me</a></li>
-        <li>Their Work</li>
-        <li>Contact Me</li>
+        <li><a href="#about-section">About Me</a></li>
+        <li><a href="#work-section">Work</a></li>
+        <li><a href="#contact-section">Contact Me</a></li>
+        <li><a href="">Resume</a></li>
         <li></li>
       </ul>
     </nav>
   </header>
 
-  <div class="imagebackground">
-    <header class="subtitle">Subtitles here</header>
+  <div id="image-subtitle" class="imagebackground">
+    <header class="subtitle">Web Portafolio</header>
   </div>
 
 
   <main>
-    <section class="about">
+    <section id="about-section" class="about">
       <header class="title-about">About me</header>
-      <p class="text-about">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-         Enim suscipit eum laudantium perferendis ipsam modi
-          nesciunt numquam quia a fugiat corrupti labore incidunt
-           quod magni provident, dolorem id consequuntur cumque.</p>
+      <img class="image-developer" src="./assets/images/andrescedillo.PNG" alt="photography of Andres Cedillo Developer">
+      <p class="text-about">Andrés Alexander Cedillo Chincoya,
+         29, is a programmer and creative technologist from Mexico City.
+          He has a degree in Audiovisual Communication from the Universidad 
+          del Claustro de Sor Juana. He has specialized in electronic art and 
+          creative code exploring topics such as computer vision, sound art, 
+          electronic literature, generative art and machine learning.<br>
+          <br>
+          During this time he has been involved in the development and 
+          creation of complex interaction systems to communicate different 
+          media and supports in real time, such as light installations, tracking systems,
+           generative visuals, sensors, alternative projection supports, kinetic lights, 
+           lasers, etc. webapps, VR and AR. I have had an approach to programming languages ​​and environments such as Javascript, Python, Openframeworks, Max/Msp/Jitter, 
+           Arduino, Processing, C#, GLSL, TouchDesigner, Unity 3D, Unreal Engine, Notch VFX.
+        </p>
     </section>
 
-    <section class="work">
+    <section id="work-section" class="work">
       <header class="title-work">Work</header>
       <div class="grid">
+
           <div id="music-web-app" class="card">
-            <header class="main-portafolio"><a href="">Portafolio 1<br class="sub-title-work">Hello</a></header>
+            <header class="main-portafolio"><a href="">Web Apps</a></header>
 
           </div>
-          <div class="card">
-            <header class="portafolio"><a href="">Portafolio 2<br>Hello</a></header>
-
+          <div id="machine-learning" class="card">
+            <header  class="portafolio"><a href="">A.I</a></header>
           </div>
 
-          <div class="card">
-            <header class="portafolio"><a href="">Portafolio 3<br>Hello</a></header>
+          <div id="metaverse" class="card">
 
+            <header class="portafolio"><a href="">Metaverse</a></header>
           </div>
-          <div class="card">
-            <header class="portafolio"><a href="">Portafolio 4<br>Hello</a></header>
 
+          <div id="mobile" class="card">
+            <header class="portafolio"><a href="">Mobile</a></header>
           </div>
-          <div class="card">
-            <header class="portafolio"><a href="">Portafolio 5<br>Hello</a></header>
-
+          <div id="ecommerce"  class="card">
+            <header class="portafolio"><a href="">Ecommerce</a></header>
           </div>
       </div>
     </section>
 
-    <section class="conctact">
+    <section id="contact-section" class="conctact">
       <header class="title-contact">Contact Me</header>
         <ul class="text-contact">
           <li>Web</li>
