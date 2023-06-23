@@ -81,6 +81,12 @@ header.title-about{
     height: 400px;
 }
 
+.title-about a{
+    position: relative;
+    left: 20%;
+    text-decoration: none;
+}
+
 .image-developer{
     padding-top: 7rem;
     max-width: 100%;
@@ -107,7 +113,12 @@ header.title-work{
     padding: 40px;
     width: 10%;
     height:840px;
+}
 
+.title-work a{
+    position: relative;
+    left: 50%;
+    text-decoration: none;
 }
 
 .grid{
@@ -252,8 +263,11 @@ header.title-contact{
     padding: 50px;
     width: 10%;
     height: 100px;
-
-
+}
+.title-contact a{
+    position: relative;
+    left: 20%;
+    text-decoration: none;
 }
 
 .text-contact{

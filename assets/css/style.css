@@ -45,8 +45,9 @@ header.title-about{
   background-color: var(--background-main);
   border-right: 6px solid var(--border-color-titles);
   color: var(--border-color-titles);
-
 }
+
+
 
 p.text-about{
   background-color: var(--background-main);
@@ -54,6 +55,9 @@ p.text-about{
   color: var(--border-color-titles);
 }
 
+.title-about a{
+  color: var(--border-color-titles);
+}
 
 section.work{
   display: flex;
@@ -66,6 +70,9 @@ header.title-work{
   color: var(--border-color-titles);
 }
 
+.title-work a{
+  color: var(--border-color-titles);
+}
 
 .grid{
   background-color: var(--background-main);
@@ -95,7 +102,10 @@ header.title-contact{
   background-color: var(--background-main);
   border-right: 6px solid var(--border-color-titles);
   color: var(--border-color-titles);
+}
 
+.title-contact a{
+  color: var(--border-color-titles);
 }
 
 .text-contact li{
@@ -105,29 +115,161 @@ header.title-contact{
 
 
 
-/* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
 
-/* Tablets - header changes color */
-@media screen and (max-width: 1792px) {
+@media screen and (max-width: 1900px) {
+
+  .title-work a{
+    position: relative;
+    left: 40%;
+  }
+
+  .card{
+    margin: 1.8%;
+    width: 44.9%;
+  }
+  header.title-contact{
+    width: 8.7%;
+}
+.title-contact a{
+  position: relative;
+  left: -5%;
+}
+}
+
+
+@media screen and (max-width: 1751px) {
   h1{
     font-size: 45px;
-    padding-top: 2rem;
   }
-
 
 }
 
-/* Large smartphones - navbar changes color */
-@media screen and (max-width: 1500px) {
 
-  .subtitle{
+
+@media screen and (max-width: 1621px) {
+
+  .title-work a{
+    position: relative;
+    left: 50%;
+  }
+
+}
+
+
+@media screen and (max-width: 1570px) {
+
+
+  .title-work a{
+    position: relative;
+    left: 40%;
+  }
+
+  header.subtitle{
     font-size: 40px;
-    padding-top: 2rem;
+  }
+  .title-contact a{
+    position: relative;
+    left: -15%;
+  }
+
+  header.title-contact{
+    width: 9%;
+}
+}
+
+
+@media screen and (max-width: 1527px) {
+
+  .title-work a{
+    position: relative;
+    left: 20%;
+  }
+  
+}
+
+
+@media screen and (max-width: 1550px) {
+  .card{
+    margin: 1.8%;
+    width: 44.7%;
+  }
+
+
+}
+
+@media screen and (max-width: 1417px) {
+
+  h1{
+    font-size: 35px;
+  }
+  .title-contact a{
+    position: relative;
+    left: -15%;
+  }
+  header.title-contact{
+    width: 8%;
+}
+  .title-contact a{
+    position: relative;
+    left: -50%;
+  }
+}
+
+
+
+@media screen and (max-width: 1152px) {
+
+  h1{
+    font-size: 35px;
+  }
+
+  .title-about a{
+    position: relative;
+    left: -80%;
+  }
+
+  
+  .title-work a{
+    position: relative;
+    left: -80%;
+  }
+
+  header.subtitle{
+    font-size: 30px;
+  }
+
+  .card{
+    margin: 1.5%;
+    width: 44.7%;
+  }
+
+  header.title-contact{
+    width: 8%;
+}
+  .title-contact a{
+    position: relative;
+    left: -50%;
   }
 
 }
 
-/* Small smartphones - image placeholders change color */
-@media screen and (max-width: 576px) {
+
+
+@media screen and (max-width: 1000px) {
+
+  header.subtitle{
+    font-size: 28px;
+  }
 
 }
+
+
+@media screen and (max-width: 887px) {
+
+  h1{
+    font-size: 25px;
+  }
+
+
+}
+
